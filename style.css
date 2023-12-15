@@ -1,0 +1,100 @@
+
+* {
+    margin: 0; /**/
+    padding: 0px; /**/ 
+    list-style: none; /**/
+    font-family: Arial, Helvetica, sans-serif; /**/
+    font-size: 1.2rem; /**/ 
+}
+
+
+.cabecalho > a {
+    text-decoration: none; /* Retira a linha de baixo do Texto clicavel*/
+    color: white; /* Muda a cor do texto */ 
+    font-size: 1.2rem; /* Aumenta a fonte */
+}
+
+.cabecalho {
+    display: flex; /*Responsável por alinhar os itens um ao lado do outro dentro do header*/
+    justify-content: space-between; /**/
+    align-items: center; /**/
+    background-color: black; /**/
+    padding: 60px; /**/
+    flex-wrap: wrap; /*Para o item ficar adptável em telas menores*/
+}
+
+.menu {
+    display: flex; /*Responsavel por alinhar os itens lado a lado*/
+}
+
+.menu > li { /*Aqui chamamos  nossas LI para estilizarção*/
+    margin-left: 10px; /*Alteramos o espaçamento da margem a esquerda das listas*/
+}
+
+.menu > li > a { /*Aqui chamamos nossa tag de link*/
+    padding: 10px; /*Alteração de preenchimento*/
+    background-color: rgb(17, 151, 218); /*Cor de fundo*/
+    display: block;  /* Responsável por habilitar os itens em Bloco */
+    color: white; /*Cor da fonte*/
+    text-decoration: none; /*Decoração de texto: não*/
+}
+
+h1 {
+    text-align: center; /*Alinhamos ao centro*/
+    margin: 100px; /*Margin de 50 pixels para todos os lados*/
+}
+
+img {
+    display: block; /**/
+    max-width: 100%;/**/
+}
+
+.flex {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px; /* */
+    margin: 10px; /* Wspaçamento das margens laterais, superior e */
+
+
+}
+
+.templates{
+    background-color: rgb(58, 255, 255);
+    text-align: justify;
+    padding: 30px;
+    
+}
+
+
+
+.rodape{
+    display: flex; /*Responsável por alinhar os itens lado a lado */
+    justify-content: space-between; /*Responsável por espaar os itens (inicio ao fim)*/
+    padding: 60px; /*Preenchimento do Rodapé*/
+    background-color: black; /*Cor de fundo do rodapé*/
+    align-items: center;/*Alinhar os itens ao centro*/
+    flex-wrap: wrap; /*Aqui informamos que os itens podem "quebrar" em telas menores*/
+}
+
+.rodape > a:hover{/*Aqui chamamos nossa Tag "a" para estilização ao passar o mouse*/ 
+    color: aqua;/*a cor que ira aparecer na estilização*/ 
+    transition: 0.8s;/*o tempo para atingir o fim da estilização*/ 
+}
+
+.rodape > a {
+    text-decoration: none;/*Estamos desabilitando a decoração do texto padrão do html*/ 
+    color: white;/*mudamos a cor do texto para branco*/ 
+    margin-right: 10px;/*espaçãmento entre as Tags "a"*/ 
+}
+
+.menu > li > i { /*Chamamos nossa Icon para estilização*/ 
+    background-color: aqua;/*cor de fundo da caixa*/ 
+    padding: 10px;/*Tamanho do preenchimento da caixa azul*/ 
+    
+}
